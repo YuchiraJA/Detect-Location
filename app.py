@@ -165,7 +165,6 @@ def predict():
         rf_prediction = name_encoder.inverse_transform([int(rf_prediction)])
 
         response = {
-            "SVR_Predicted_Name": svr_prediction[0],
             "Random_Forest_Predicted_Name": rf_prediction[0]
         }
 
